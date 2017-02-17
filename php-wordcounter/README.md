@@ -41,7 +41,7 @@ If you run into any issues, questions, or ideas please contact the creator of th
 
 ##Technologies Used:
 
-This browser based program was created with PHP, Twig, Silex, HTML, and CSS.
+This browser based program was created with PHP, Twig, Silex, HTML, Bootstraps, and CSS.
 
 ##License:
 
