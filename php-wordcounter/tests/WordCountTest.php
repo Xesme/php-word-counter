@@ -7,34 +7,28 @@
         {
             // Arrange
             $test_RepeatCounter = new RepeatCounter;
-            $input_word = "That";
-            $input_sentence = "that";
+            $word = "That";
+            $sentence = "that";
 
             // Act
-            $result = $test_RepeatCounter->wordEquality($input_word, $input_sentence);
+            $result = $test_RepeatCounter->wordEquality($word, $sentence);
 
             // Assert
             $this->assertEquals(true, $result);
         }
 
-
         function test_countRepeats()
         {
             // Arrange
             $test_RepeatCounter = new RepeatCounter;
-            $input_word = "that";
-            $input_sentence = "that is that";
-
+            $word = "that";
+            $sentence = "that is that";
 
             // Act
-            $result = $test_RepeatCounter->countRepeats($input_word, $input_sentence);
+            $result = $test_RepeatCounter->countRepeats($word, $sentence);
 
             // Assert
             $this->assertEquals(2, $result);
-
         }
     }
-
-
-
 ?>

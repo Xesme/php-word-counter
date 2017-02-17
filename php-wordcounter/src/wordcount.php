@@ -4,13 +4,11 @@
     {
         private $word;
         private $sentence;
-        private $counter;
 
         function __construct($word, $sentence)
         {
             $this->word = $word;
             $this->sentence = $sentence;
-            $this->counter = $counter;
         }
 
         // getters and setters
@@ -35,45 +33,35 @@
             $this->sentence = (string) $sentence;
         }
 
-        function getCounter()
-        {
-            return $this->counter;
-        }
-
-        function setCounter($counter)
-        {
-            $this->counter = (int) $counter;
-        }
-
         // Functions
 
-        function wordEquality($input_word, $input_senetence)
-        {
-            $input_word = strtolower($input_word);
-            $input_senetence = strtolower($input_senetence);
+        // function wordEquality($word, $sentence)
+        // {
+        // $word = strtolower($word);
+        // $sentence = strtolower($sentence);
+        //     if ($word === $sentence)
+        //     {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
 
-            if ($input_word === $input_senetence)
-            {
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-        function countRepeats($input_word, $input_sentence)
+        function countRepeats($word, $sentence)
         {
-            $input_sentence = explode(" ", $input_sentence);
+            $word = strtolower($word);
+            $sentence = strtolower($sentence);
+
+            $array_sentence = explode(" ", $sentence);
             $counter = 0;
 
-            for ($i = 0; $i <= count($input_sentence); $i++)
+            for ($i = 0; $i <= count($array_sentence); $i++)
             {
-                if ($input_word === $input_sentence[$i])
-                {
+                if ($word === $array_sentence[$i])
                     $counter ++;
                 }
+                return $counter;
             }
-            return $counter;
         }
-    }
 
 ?>
