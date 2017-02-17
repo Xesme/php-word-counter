@@ -42,6 +42,7 @@
                     $counter ++;
                 }
             }
+            echo "$counter";
             return $counter;
         }
     }
