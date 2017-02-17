@@ -7,7 +7,7 @@ Author: Xia Amendolara
 
 ##Description:
 
-A program that counts the frequency of a word used in sentence or a paragraph. This program was created for the second week independent project at Epicodus in Portland, Oregon.
+A program that counts the frequency of a word used in sentence. This program was created for the second week independent project at Epicodus in Portland, Oregon.
 
 
 ##Specifications:
@@ -16,7 +16,7 @@ Behavior | Input 1 | Input 2 | Output
 The program can recognize two words that are exactly the same | "the" | "the"|
 returns true.
 The program can recognize two words that are the same, regardless of input (capitalization and etc.) | "The" | "the" | Returns true.
-The user fills out the form with: a word to be counted, and a sentence or paragraph to be searched through. The program can count the frequency of the inputted word against the  | Word: "red" | Sentence: "The red fox jumps through the air with the determination of a wolf." | The word "red " is used 1 time.
+The user fills out the form with: a word to be counted, and a sentence to be searched through. The program can count the amount of times a word appears in a sentence. | Word: "red" | Sentence: "The red fox jumps through the air with the determination of a wolf." | The word "red" is used 1 time.
 
 
 ##Setup and Installation Requirements:

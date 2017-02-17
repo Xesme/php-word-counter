@@ -20,7 +20,7 @@
         $sentence = $_POST['sentence'];
         $new_repeat = new RepeatCounter($word, $sentence);
         $result = $new_repeat->countRepeats($word, $sentence);
-        return $app['twig']->render('display_result.html.twig' , array('result' => $result, 'word' => $word));
+        return $app['twig']->render('display_result.html.twig' , array('result' => $result, 'word' => $word, 'sentence' => $sentence));
     });
 
     return $app;
