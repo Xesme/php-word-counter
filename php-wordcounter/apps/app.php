@@ -15,6 +15,14 @@
         return $app['twig']->render('search_form.html.twig');
     });
 
+    $app->post("/display_result", function() use($app){
+        $word = $_POST['word'];
+        $sentence = $_POST['sentence'];
+        $new_repeat = new RepeatCounter($word, $sentence);
+        $result = $new_repeat->countRepeats($word, $sentence);
+        return $app['twig']->render('display_result.html.twig' , array('result' => $result, 'word' => $word));
+    });
+
     return $app;
 ?>
 

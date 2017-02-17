@@ -6,7 +6,7 @@
         private $sentence;
         private $counter;
 
-        function __construct($word, $sentence, $count)
+        function __construct($word, $sentence)
         {
             $this->word = $word;
             $this->sentence = $sentence;
@@ -20,9 +20,9 @@
             return $this->word;
         }
 
-        function setWord($input_word)
+        function setWord($word)
         {
-            $this->word = (string) $input_word;
+            $this->word = (string) $word;
         }
 
         function getSentence()
@@ -30,9 +30,9 @@
             return $this->sentence;
         }
 
-        function setSentence($input_sentence)
+        function setSentence($sentence)
         {
-            $this->sentence = (string) $input_sentence;
+            $this->sentence = (string) $sentence;
         }
 
         function getCounter()
@@ -43,8 +43,10 @@
         function setCounter($counter)
         {
             $this->counter = (int) $counter;
+        }
 
         // Functions
+
         function wordEquality($input_word, $input_senetence)
         {
             $input_word = strtolower($input_word);
@@ -52,10 +54,8 @@
 
             if ($input_word === $input_senetence)
             {
-                echo "These words are even";
                 return true;
             } else {
-                echo "These are not even";
                 return false;
             }
         }
@@ -72,9 +72,8 @@
                     $counter ++;
                 }
             }
-            echo "$counter";
             return $counter;
         }
     }
-}
+
 ?>

@@ -4,12 +4,15 @@
     <head>
         <meta charset="utf-8">
         <title>Search a word results!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h2>You searched through this body of text:</h2>
-        <span id="textbody">{{RepeatCounter.getSentence}}</span>
-        <p> the word {{RepeatCounter.getWord}} appears this many {{RepeatCounter.getCounter}} times.</p>
-        <form  action="/" method="get">
-            <button type="submit">Try it again!</button>
-        </form>
+        <div class="container">
+            <h2>The word <span id="red">{{word}}</span> appears this many times:</h2>
+            <h3>{{result}}</h3>
+            <form  action="/" method="get">
+                <button type="submit">Try it again!</button>
+            </form>
+        </div>
     </body>
