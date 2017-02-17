@@ -14,7 +14,7 @@
             $result = $test_ReapeatCounter->wordEquality($input_sentence, $input_word);
 
             // Assert
-            $this->assertEquals(false, $result);
+            $this->assertEquals(true, $result);
         }
 
 

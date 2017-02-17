@@ -13,7 +13,7 @@
 
             if ($word === $sentence[1])
             {
-                return false;
+                return true;
             }
         }
     }
