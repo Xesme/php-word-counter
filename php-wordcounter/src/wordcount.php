@@ -15,17 +15,20 @@
 
 
         // Functions
-        // function wordEquality()
-        // {
-        //     if ($input_one === $input_two)
-        //     {
-        //         echo "These words are even";
-        //         return true;
-        //     } else {
-        //         echo "These are not even";
-        //         return false;
-        //     }
-        // }
+        function wordEquality($input_word, $input_senetence)
+        {
+            $input_word = strtolower($input_word);
+            $input_senetence = strtolower($input_senetence);
+
+            if ($input_word === $input_senetence)
+            {
+                echo "These words are even";
+                return true;
+            } else {
+                echo "These are not even";
+                return false;
+            }
+        }
 
         function countRepeats($input_word, $input_sentence)
         {
