@@ -27,14 +27,14 @@
         //     }
         // }
 
-        function countRepeatsOne($input_word, $input_sentence)
+        function countRepeats($input_word, $input_sentence)
         {
             $input_sentence = explode(" ", $input_sentence);
             $counter = 0;
 
-            for ($i = 0; $i <= $input_sentence[$i]; $i++)
+            for ($i = 0; $i <= count($input_sentence); $i++)
             {
-                if (in_array("$input_word", $input_sentence))
+                if ($input_word === $input_sentence[$i])
                 {
                     $counter ++;
                 }

@@ -18,19 +18,19 @@
         // }
 
 
-        function test_countRepeatsOne()
+        function test_countRepeats()
         {
             // Arrange
             $test_RepeatCounter = new RepeatCounter;
             $input_word = "that";
-            $input_sentence = "this or that is then or now";
+            $input_sentence = "that is that";
 
 
             // Act
-            $result = $test_RepeatCounter->countRepeatsOne($input_word, $input_sentence);
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_sentence);
 
             // Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals(2, $result);
 
         }
     }
