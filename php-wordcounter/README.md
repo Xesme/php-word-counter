@@ -13,7 +13,7 @@ A program that counts the frequency of a word used in a sentence. This program w
 
 ##Specifications:
 Behavior | Input 1 | Input 2 | Output
------------- | ------------- | -------------
+------------ | ------------- | -------------| -------------
 The program can recognize two words that are exactly the same | "the" | "the"|
 returns true.
 The program can recognize two words that are the same, regardless of input (capitalization and etc.) | "The" | "the" | Returns true.
