@@ -1,4 +1,4 @@
-#PHP Address Book
+#PHP Word Counter
 
 [Xia's Github](https://github.com/Xesme/php-word-counter.git)_
 
@@ -8,7 +8,7 @@ Author: Xia Amendolara
 
 ##Description:
 
-A program that counts the frequency of a word used in sentence. This program was created for the second week independent project at Epicodus in Portland, Oregon.
+A program that counts the frequency of a word used in a sentence. This program was created for the second week independent project at Epicodus in Portland, Oregon.
 
 
 ##Specifications:
