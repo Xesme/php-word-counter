@@ -35,18 +35,6 @@
 
         // Functions
 
-        // function wordEquality($word, $sentence)
-        // {
-        // $word = strtolower($word);
-        // $sentence = strtolower($sentence);
-        //     if ($word === $sentence)
-        //     {
-        //         return true;
-        //     } else {
-        //         return false;
-        //     }
-        // }
-
         function countRepeats($word, $sentence)
         {
             $word = strtolower($word);
@@ -63,5 +51,4 @@
                 return $counter;
             }
         }
-
 ?>
