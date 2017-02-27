@@ -14,10 +14,11 @@ A program that counts the frequency of a word used in a sentence. This program w
 ##Specifications:
 |Behavior | Input 1 | Input 2 | Output|
 |------------ | ------------- | -------------| -------------|
-|The program can recognize two words that are exactly the same | "the" | "the"|
-returns true.|
-|The program can recognize two words that are the same, regardless of input (capitalization and etc.) | "The" | "the" | Returns true.|
-|The user fills out the form with: a word to be counted, and a sentence to be searched through. The program can count the amount of times a word appears in a sentence. | Word: "red" | Sentence: "The red fox jumps through the air with the determination of a wolf." | The word "red" is used 1 time.|
+|If the user enters a word that is not within the sentence the word-counter will return false | sentence: "Timber wolves are great" word: "that" | word-counter: "0" (FALSE)|
+|The user can enter capitalized words and the word-counter will count the frequency | sentence: "The red fox jumps high through the air" word: "the" | word-counter: "2"|
+|If the user enters a sentence that has punctuation the word-counter will still count the frequency of the word | sentence: "The red fox jumps high through the air, and returns to the ground." word: "the"  | word-counter: "3"|
+
+
 
 
 ##Setup and Installation Requirements:
@@ -41,7 +42,14 @@ If you run into any issues, questions, or ideas please contact the creator of th
 
 ##Technologies Used:
 
-This browser based program was created with PHP, Twig, Silex, HTML, Bootstraps, and CSS.
+This browser based program was created with:
+* _PHP_
+* _PHPUnit_
+* _Twig_
+* _Silex_
+* _HTML_
+* _Bootstrap_
+* _CSS_
 
 ##License:
 

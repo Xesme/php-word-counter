@@ -48,10 +48,13 @@
         {
             $word = strtolower($word);
             $sentence = strtolower($sentence);
-
-            $array_sentence = explode(" ", $sentence);
-            $array_word = explode(" ", $word);
             $counter = 0;
+
+            $clean_up = preg_replace("/[^a-zA-Z 0-9]+/", "", $word);
+            $array_word = explode(" ", $clean_up);
+
+            $clean_up = preg_replace("/[^a-zA-Z 0-9]+/", "", $sentence);
+            $array_sentence = explode(" ", $clean_up);
 
             for ($i = 0; $i <= count($array_sentence); $i++)
             {

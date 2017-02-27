@@ -7,15 +7,28 @@
         {
             // Arrange
             $word = "that";
-            $word2 = "timber";
+            $word2 = "timber wolves are great";
             $test_RepeatCounter = new RepeatCounter($word, $word2);
-            // var_dump($word);
 
             // Act
             $result = $test_RepeatCounter->wordEquality();
 
             // Assert
             $this->assertEquals(false, $result);
+        }
+
+        function test_ignorePunctuation()
+        {
+            // Arrange
+            $word = "the ,";
+            $sentence = "The red fox jumps high through the air, and returns to the ground.";
+            $test_RepeatCounter = new RepeatCounter($word, $sentence);
+
+            // Act
+            $result = $test_RepeatCounter->countRepeats($word, $sentence);
+
+            // Assert
+            $this->assertEquals(3, $result);
         }
 
         function test_countRepeats()
