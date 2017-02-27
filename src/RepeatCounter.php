@@ -50,11 +50,12 @@
             $sentence = strtolower($sentence);
 
             $array_sentence = explode(" ", $sentence);
+            $array_word = explode(" ", $word);
             $counter = 0;
 
             for ($i = 0; $i <= count($array_sentence); $i++)
             {
-                if ($word === $array_sentence[$i])
+                if ($array_word[0] === $array_sentence[$i])
                     $counter ++;
                 }
                 return $counter;
