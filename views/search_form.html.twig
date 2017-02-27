@@ -10,12 +10,14 @@
         <div class="container">
             <h3>Use the inputs below to check how frequently a word appears in a sentence below:</h3>
             <form action="/display_result" method="post">
-                <label for="word"> Enter a word:
-                    <input for="word" type="text" name="word" value="">
-                </label>
-                <label for="sentence"> Enter a sentence:
+                <label for="sentence"> Enter a <span class="red">sentence</span>:
                     <input for="sentence" type="text" name="sentence" value="">
                 </label>
+                <br>
+                <label for="word"> Enter a <span class="red">word</span> to count:
+                    <input for="word" type="text" name="word" value="">
+                </label>
+                <br>
                 <button type="submit" class="btn btn-success">Search!</button>
             </form>
         </div>

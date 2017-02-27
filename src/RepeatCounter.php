@@ -34,6 +34,15 @@
         }
 
         // Functions
+        function wordEquality()
+        {
+            if ($word === $word2)
+            {
+                return false;
+            } else {
+                return false;
+            }
+        }
 
         function countRepeats($word, $sentence)
         {
