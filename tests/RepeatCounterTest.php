@@ -3,11 +3,28 @@
 
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
+        function test_construct()
+        {
+            // Arrange
+            $word = "that";
+            $sentence = "that is that";
+            $test_repeater = new RepeatCounter($word, $sentence);
+
+            // Act
+            $result1 = $test_repeater->getWord();
+            $result2 = $test_repeater->getSentence();
+
+            // Assert
+            $this->assertEquals($word, $result1);
+            $this->assertEquals($sentence, $result2);
+
+        }
+
         function test_wordEquality()
         {
             // Arrange
             $word = "that";
-            $word2 = "timber wolves are great";
+            $word2 = "this";
             $test_RepeatCounter = new RepeatCounter($word, $word2);
 
             // Act
