@@ -20,15 +20,43 @@
 
         }
 
+        function test_countRepeats()
+        {
+            // Arrange
+            $word = "that";
+            $sentence = "that is that";
+            $test_RepeatCounter = new RepeatCounter($word, $sentence);
+
+            // Act
+            $result = $test_RepeatCounter->countRepeats($word, $sentence);
+
+            // Assert
+            $this->assertEquals(2, $result);
+        }
+
         function test_wordEquality()
         {
             // Arrange
+            $word = "that";
+            $word2 = "that";
+            $test_RepeatCounter = new RepeatCounter($word, $word2);
+
+            // Act
+            $result = $test_RepeatCounter->wordEquality($word, $word2);
+
+            // Assert
+            $this->assertEquals(true, $result);
+        }
+
+        function test_falseEquality()
+        {
             $word = "that";
             $word2 = "this";
             $test_RepeatCounter = new RepeatCounter($word, $word2);
 
             // Act
-            $result = $test_RepeatCounter->wordEquality();
+            $result = $test_RepeatCounter->wordEquality($word, $word2);
+
 
             // Assert
             $this->assertEquals(false, $result);
@@ -46,20 +74,6 @@
 
             // Assert
             $this->assertEquals(3, $result);
-        }
-
-        function test_countRepeats()
-        {
-            // Arrange
-            $word = "that";
-            $sentence = "that is that";
-            $test_RepeatCounter = new RepeatCounter($word, $sentence);
-
-            // Act
-            $result = $test_RepeatCounter->countRepeats($word, $sentence);
-
-            // Assert
-            $this->assertEquals(2, $result);
         }
     }
 ?>

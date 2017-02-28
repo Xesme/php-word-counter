@@ -34,11 +34,14 @@
         }
 
         // Functions
-        function wordEquality()
+        function wordEquality($word, $word2)
         {
-            if ($word === $word2)
+            $word = count_chars($word, 1);
+            $word2 = count_chars($word2, 1);
+
+            if ($word == $word2)
             {
-                return false;
+                return true;
             } else {
                 return false;
             }
