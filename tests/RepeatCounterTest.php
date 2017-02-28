@@ -62,10 +62,24 @@
             $this->assertEquals(false, $result);
         }
 
+        function test_capitals()
+        {
+            // Arrange
+            $word = "The";
+            $sentence = "The red fox jumps high through the air, and returns to the ground.";
+            $test_RepeatCounter = new RepeatCounter($word, $sentence);
+
+            // Act
+            $result = $test_RepeatCounter->countRepeats($word, $sentence);
+
+            // Assert
+            $this->assertEquals(3, $result);
+        }
+
         function test_ignorePunctuation()
         {
             // Arrange
-            $word = "the ,";
+            $word = "the,";
             $sentence = "The red fox jumps high through the air, and returns to the ground.";
             $test_RepeatCounter = new RepeatCounter($word, $sentence);
 
