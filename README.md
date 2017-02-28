@@ -12,8 +12,8 @@ A program that counts the frequency of a word used in a sentence. This program w
 
 
 ##Specifications:
-|Behavior | Input 1 | Input 2 | Output|
-|------------ | ------------- | -------------| -------------|
+|Behavior | Input | Output|
+|------------ | ------------- | -------------|
 |User can enter a word and a sentence into the program| sentence: "this is that" word: "that"| "this is that" "that"|
 |The program will count how many times the given word appears in the sentence | sentence: "this is that" word: "that"| word-counter: 2|
 |If the user enters a word that is not within the sentence the word-counter will return false | sentence: "Timber wolves are great" word: "that" | word-counter: "0" (FALSE)|
