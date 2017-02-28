@@ -1,6 +1,6 @@
 #PHP Word Counter
 
-[Xia's Github](https://github.com/Xesme/php-word-counter.git)_
+[Xia's Github](https://github.com/Xesme/php-word-counter.git)
 
 A simple webpage for a word counter, February 17th, 2017
 
